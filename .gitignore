@@ -1,0 +1,8 @@
+.vscode/
+coverage
+.nyc_output
+.env
+
+business.js
+file.js
+node_modules/

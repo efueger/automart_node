@@ -1,0 +1,334 @@
+@keyframes slideInFromRight{
+    0% {
+        transform: translateX(100%)
+
+    }
+    100%{
+        transform:translateX(0)
+    }
+}
+
+
+@keyframes slideInFromLeft{
+    0% {
+        transform: translateX(-100%)
+
+    }
+    100%{
+        transform:translateX(0)
+    }
+}
+
+@keyframes slideBack{
+    0% {
+        transform: translateX(0)
+
+    }
+    100%{
+        transform:translateX(-100%)
+    }
+}
+
+
+body{
+    margin:0;
+}
+
+/* Css for Dashboard */
+
+
+.car-item img{
+    height:200px;
+    width:100%;
+}
+
+
+
+.cars-dash{
+    display:flex;
+   
+}
+.posted-car,.purchased-car{
+    width:50%;
+    background:white;
+    margin-top:5%;
+    display:flex;
+   
+    flex-direction:column;
+    padding:25px;
+    height:500px;
+    overflow:scroll;
+}
+
+.posted-car button,.purchased-car button{
+    margin-left:auto;
+    width:10%;
+    background:#D81416;
+    color:white;
+    height:30px;
+    font-size:1rem;
+}
+
+.sold-edit{
+    display:flex;
+    justify-content: right;
+}
+.sold-edit span{
+display:flex;
+align-items: center;
+font-size: 1.3rem;
+}
+
+.sold-edit input[type="checkbox"]:checked{
+    transform:scale(1.5);
+   
+  
+}
+
+
+.sold-edit input[type="checkbox"]{
+    font-size:30px;
+    transform:scale(1.2);
+    transition: transform .5s ease-in, height .7s ease-in; 
+}
+
+.sold-edit button{
+    background: #3377aa;
+    font-size:1rem;
+    width:30%;
+}
+
+
+.asold-edit{
+    display:flex;
+    justify-content: flex-end;
+}
+.asold-edit span{
+display:flex;
+align-items: center;
+font-size: 1.3rem;
+margin-right:auto;
+}
+
+.asold-edit input{
+    font-size:30px;
+}
+
+.asold-edit button{
+    background:#D81416;
+    font-size:1rem;
+    width:20%;
+    margin:0;
+}
+
+.asold-edit button:nth-child(2){
+    background: #3377aa;
+}
+
+.purchased-car .asold-edit button:nth-child(2){
+    background:#D81416;
+}
+.purchased-car .asold-edit button:nth-child(1){
+    background: #3377aa;
+}
+
+.sold-tag{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    background:#008f4a;
+    float:right;
+}
+
+.sold-tag > p{
+    color:white;
+    text-align: center;
+    font-weight:bold;
+}
+
+
+.posted-car > h1, .purchased-car > h1{
+text-align: center;
+width:100%;
+}
+
+hr{
+    box-shadow:0 1px 3px 0 rgba(0,0,0,.12), 0 1px 2px 0 rgba(0,0,0,.24);    
+}
+
+
+.car-item{
+width:70%;
+
+margin:auto;
+border:1px solid whitesmoke;
+box-shadow:0 1px 3px 0 rgba(0,0,0,.12), 0 1px 2px 0 rgba(0,0,0,.24);
+margin-bottom:5%;
+}
+
+.car-item div>p:nth-child(4){
+    color:#D81416;
+}
+
+
+/* Modal Form Css */
+#close-advert,#close-order{
+    text-align:right;
+}
+
+.viewOform .close-order{
+    text-align:right;
+}
+.viewOform{
+    display:none;
+}
+
+
+.viewPform .close-order{
+    text-align:right;
+}
+.viewPform{
+    display:none;
+}
+.viewForm{
+    position:fixed;
+    display:block;
+    background:rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+    min-height:100vh;
+    animation: 1.5s ease-out 0s 1 slideInFromLeft;
+}
+
+
+
+.close-modal{
+    position:fixed;
+    /* display:none; */
+    background:rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+
+    min-height:100vh;
+    animation: 1.5s ease-out 0s 1 slideBack;
+    width:100%;
+}
+
+.order-form .field-outer, .post-form .field-outer{
+    width: 100%;
+    overflow:hidden;
+    position: relative;
+    height:47px;
+    margin-bottom:5px;
+}
+
+.order-form .field-outer select, .post-form .field-outer select{
+    height:inherit;
+    width:inherit;
+}
+
+
+.order-form, .post-form{
+    width:40%;
+    margin:auto;
+    background:white;
+    padding:15px;
+   margin-top:5%;
+
+}
+.order-form h1, .post-form h1{
+    text-align:center;
+    font-size:2rem;
+ 
+}
+
+
+.order-form span, .post-form span{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #a6a6a6;
+    font-size: 13px;
+    line-height: 24px;
+    display: block;
+}
+
+.order-form input, .post-form input{
+    display: block;
+    height: 45px;
+    padding: 0 15px;
+    color: #a6a6a6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #e8e8e8;
+    background-color: #f6f6f6;
+    font-weight: 400;
+    width:inherit;
+}
+
+.order-form .field-outer, .post-form .field-outer{
+    width: 100%;
+    overflow:hidden;
+    position: relative;
+}
+
+
+.order-form button, .post-form button{
+    background:#D81416;
+    display: block;
+    border: none;
+    color: #fff;
+    width: inherit;
+    text-transform: capitalize;
+    text-align: center;
+    height:40px;
+    font-size:1.3rem
+
+ 
+}
+
+
+.post-form > p{
+    cursor:pointer;
+}
+
+
+
+@media screen and (max-width: 992px){
+    .asold-edit button{
+        width:50%;
+    }
+
+
+}
+
+@media screen and (max-width: 600px){
+
+
+      
+    .asold-edit button{
+        width:50%;
+    }
+    
+
+    .order-form,.post-form{
+        width:80%;
+        margin:auto;
+    }
+
+    .cars-dash{
+        flex-direction: column;
+    }
+    .posted-car,.purchased-car{
+        width:100%;
+        margin:auto;
+        padding:0;
+    }
+    
+    
+    }

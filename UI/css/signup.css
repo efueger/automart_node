@@ -1,0 +1,122 @@
+
+body{
+    background: url(../images/car_bg.jpg) no-repeat;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    margin: 0;
+}
+
+
+
+#welcome{
+    color:whitesmoke;
+    text-align:center;
+    font-size:4rem;
+    margin:0;
+}
+
+#register-page{
+    position:absolute;
+    z-index:5;
+    width:100%;
+    height: 100%
+}
+
+
+
+.register-form, .post-form{
+    width:40%;
+    margin:auto;
+    background:white;
+    padding:15px;
+}
+.register-form h1, .post-form h1{
+    text-align:center;
+    font-size:2rem;
+ 
+}
+
+.fa{
+    margin-left:5px!important;
+}
+
+.register-form span, .post-form span{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #a6a6a6;
+    font-size: 13px;
+    line-height: 24px;
+    display: block;
+}
+
+.register-form input, .post-form input{
+    display: block;
+    height: 45px;
+    padding: 0 15px;
+    color: #a6a6a6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #e8e8e8;
+    background-color: #f6f6f6;
+    font-weight: 400;
+    width:inherit;
+}
+
+.register-form .field-outer{
+    width: 100%;
+    overflow:hidden;
+    position: relative;
+}
+
+
+.register-form button, .post-form button{
+    background:#D81416;
+    display: block;
+    border: none;
+    color: #fff;
+    width: inherit;
+    text-transform: capitalize;
+    text-align: center;
+    height:40px;
+    font-size:1.3rem
+
+ 
+}
+
+.content-wrapper{
+    display:flex;
+    align-items: center;
+    padding:30px;
+}
+
+#login {
+margin-top:5%;
+}
+
+#login a{
+    color:inherit!important;
+    text-decoration:none;
+}
+
+
+@media screen and (max-width: 992px){
+    .register-form,.post-form{
+        width:70%;
+    } 
+   body{
+       height:100vw;
+   } 
+ }
+
+
+
+@media screen and (max-width: 600px){
+    .register-form,.post-form{
+        width:100%;
+    } 
+ }
+
+
+ 

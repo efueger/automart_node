@@ -1,0 +1,27 @@
+
+
+.post-form .field-outer{
+    width: 100%;
+    overflow:hidden;
+    position: relative;
+    height:47px;
+    margin-bottom:5px;
+}
+
+.post-form .field-outer select{
+    height:inherit;
+    width:inherit;
+}
+
+
+@media screen and (max-width: 992px){
+
+
+}
+
+
+
+@media screen and (max-width: 600px){
+
+
+}

@@ -1,0 +1,631 @@
+@keyframes slideInFromRight{
+    0% {
+        transform: translateX(100%)
+
+    }
+    100%{
+        transform:translateX(0)
+    }
+}
+
+
+@keyframes slideInFromLeft{
+    0% {
+        transform: translateX(-100%)
+
+    }
+    100%{
+        transform:translateX(0)
+    }
+}
+
+
+@keyframes slideOff{
+    0% {
+        transform: translateX(0)
+
+    }
+    100%{
+        transform:translateX(-100%)
+    }
+}
+
+
+
+
+
+
+
+body{
+    background: url(../images/car_bg.jpg) no-repeat;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    margin: 0;
+}
+.search-btn a{
+    color:white;
+    text-decoration:none;
+}
+#welcome{
+    color:whitesmoke;
+    text-align:center;
+    font-size:4rem;
+}
+
+#landing-page{
+    position:absolute;
+    z-index:5;
+    width:100%;
+    height: 100%
+}
+.p-mart{
+width:60%;
+margin:auto;
+animation: 1.5s ease-out 0s 1 slideInFromLeft;
+}
+
+.p-mart > p{
+    color:white;
+    font-size:1.5rem;
+}
+
+
+
+
+.auto-form{
+    width:40%;
+    background:white;
+    padding:15px;
+    animation: 1.5s ease-out 0s 1 slideInFromRight;
+}
+
+
+
+
+.auto-form h1{
+    text-align:center;
+    font-size:2rem;
+}
+
+.fa{
+    margin:0;
+}
+
+.auto-form span{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #a6a6a6;
+    font-size: 13px;
+    line-height: 24px;
+    display: block;
+}
+
+.auto-form input{
+    display: block;
+    height: 45px;
+    padding: 0 15px;
+    color: #a6a6a6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #e8e8e8;
+    background-color: #f6f6f6;
+    font-weight: 400;
+    width:inherit;
+}
+
+.auto-form .field-outer{
+    width: 100%;
+    overflow:hidden;
+    position: relative;
+}
+
+
+.auto-form button{
+    background:#D81416;
+    display: block;
+    border: none;
+    color: #fff;
+    width: inherit;
+    text-transform: capitalize;
+    text-align: center;
+    height:40px;
+    font-size:1.3rem
+
+ 
+}
+
+.content-wrapper{
+    display:flex;
+    align-items: center;
+    padding:30px;
+}
+
+#register {
+margin-top:5%;
+
+}
+
+#register a{
+    color:inherit!important;
+    text-decoration:none;
+}
+
+
+.search-form .field-outer{
+    width:inherit;
+}
+
+.search-text{
+    color:antiquewhite;
+    text-align: center;
+}
+
+#search-select{
+    display:flex;
+}
+
+#search-select .select-car{
+width:90%;
+height:50px;
+margin-bottom:3%;
+}
+
+#search-select .field-outer{
+    width:50%;
+}
+
+.search-form button{
+    background:#D81416;
+    display: block;
+    width:50%;
+    margin:auto;
+    border: none;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    height:40px;
+    font-size:1.3rem
+
+ 
+}
+
+
+
+
+/* Css for section two */
+#close-flag{
+    text-align:right;
+}
+.f-car{
+    width:inherit;
+    background:white;
+    margin-top:5%;
+    display:flex;
+    flex-wrap:wrap;
+    padding:25px;
+}
+
+.f-car button{
+    margin-left:auto;
+    width:10%;
+    background:#D81416;
+    color:white;
+    height:30px;
+    font-size:1rem;
+}
+
+.f-car > h1{
+text-align: center;
+width:100%;
+}
+
+hr{
+    box-shadow:0 1px 3px 0 rgba(0,0,0,.12), 0 1px 2px 0 rgba(0,0,0,.24);    
+}
+
+
+.car-item{
+width:30%;
+margin:auto;
+border:1px solid whitesmoke;
+box-shadow:0 1px 3px 0 rgba(0,0,0,.12), 0 1px 2px 0 rgba(0,0,0,.24);
+margin-bottom:5%;
+overflow: hidden;
+}
+
+.car-item div>p:nth-child(4){
+    color:#D81416;
+}
+
+.sold-edit{
+    display:flex;
+    justify-content: flex-end;
+}
+.sold-edit span{
+display:flex;
+align-items: center;
+font-size: 1.3rem;
+}
+
+.sold-edit input{
+    font-size:30px;
+}
+
+.sold-edit button{
+    background:#D81416;
+    font-size:1rem;
+    color:white;
+    width:30%!important;
+    margin:0;
+}
+
+.order-form .field-outer{
+    width: 100%;
+    overflow:hidden;
+    position: relative;
+    height:47px;
+    margin-bottom:5px;
+}
+
+.order-form .field-outer select{
+    height:inherit;
+    width:inherit;
+}
+
+.viewOform .close-order, .viewFform .close-order{
+    text-align:right;
+}
+.viewOform,.viewDform,.viewFform{
+    display:none; 
+}
+
+.viewDform p{
+    color:black!important;
+}
+
+.price-span,.model-span,.man-span,.body-span{
+    display:flex;
+    align-items:center;
+}
+
+.price-span > p,.price{
+    color:#D81416!important;
+}
+.detail-head{
+text-align: center;
+}
+
+.viewForm{
+    position:fixed;
+    display:block;
+    background:rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+    min-height:100vh;
+    animation: 1.5s ease-out 0s 1 slideInFromLeft;
+}
+
+.close-modal{
+    position:fixed;
+    /* display:none; */
+    background:rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+
+    min-height:100vh;
+    animation: 1.5s ease-out 0s 1 slideOff;
+    width:100%;
+}
+
+
+
+.viewForm .detail{
+    margin:auto;
+    width:40%;
+    margin:auto;
+    background:white;
+    padding:15px;
+    margin-top:3%;
+}
+
+.order-form{
+    width:40%;
+    margin:auto;
+    background:white;
+    padding:15px;
+   margin-top:5%;
+
+}
+.order-form h1{
+    text-align:center;
+    font-size:2rem;
+ 
+}
+
+
+.order-form span{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #a6a6a6;
+    font-size: 13px;
+    line-height: 24px;
+    display: block;
+}
+
+.order-form input{
+    display: block;
+    height: 45px;
+    padding: 0 15px;
+    color: #a6a6a6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #e8e8e8;
+    background-color: #f6f6f6;
+    font-weight: 400;
+    width:inherit;
+}
+
+.order-form textarea{
+    display: block;
+    height:150px;
+    padding: 0 15px;
+    color: #a6a6a6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #e8e8e8;
+    background-color: #f6f6f6;
+    font-weight: 400;
+    width:100%;
+
+}
+
+.textarea-outer{
+    overflow:hidden;
+}
+
+.order-form .field-outer,{
+    width: 100%;
+    overflow:hidden;
+    position: relative;
+}
+
+
+.order-form button{
+    background:#D81416;
+    display: block;
+    border: none;
+    color: #fff;
+    width: inherit;
+    text-transform: capitalize;
+    text-align: center;
+    height:40px;
+    font-size:1.3rem
+
+ 
+}
+
+.car-item p,span{
+    text-align:left;
+    margin-left:15px;
+    }
+
+.car-item img:hover{
+    /* height:300px; */
+    transform: scale(1.2);
+
+}
+
+.car-item img{
+    height:200px;
+    width:100%;
+    transition: transform .9s ease-in, height .9s ease-in; 
+    
+}
+
+/* Css for section three */
+
+.v-type{
+    width:inherit;
+    background:white;
+    margin-top:5%;
+    display:flex;
+    flex-wrap:wrap;
+    padding:25px;
+}
+
+
+.v-type > h1{
+text-align: center;
+width:100%;
+}
+
+
+
+
+.type-item{
+display:flex;
+align-items: center;
+flex-direction: column;
+width:20%;
+margin:auto;
+min-height:196px;
+border:1px solid whitesmoke;
+box-shadow:0 1px 3px 0 rgba(0,0,0,.12), 0 1px 2px 0 rgba(0,0,0,.24);
+margin-bottom:5%;
+}
+
+.type-item img:hover{
+    transform: scale(1.2);
+}
+
+.type-item p{
+    text-align:center;
+}
+
+.type-item div > img{
+height:50px;
+width:40%;
+margin-left:30%;
+transition: transform .7s ease-in, height .7s ease-in; 
+}
+
+.type-item div{
+    width:100%;
+    margin:auto;
+}
+
+
+footer{
+    background:#D81416;
+    height:50px;
+    padding-top:15px;
+  
+}
+
+.footer{
+    display:flex;
+}
+
+.footer li{
+color:white;
+list-style-type: none;
+margin-left:5%;
+}
+
+.model,.location{
+    text-align: center;
+}
+
+@media screen and (max-width: 992px){
+.detail {
+    width:80%;
+    margin:auto;
+}
+    .f-car button{
+        width:30%;
+    }
+
+    .auto-form{
+        width:70%;
+        margin-left:2%;
+    } 
+    #welcome{
+        font-size:3em;
+    }
+
+    .p-mart .auto-p{
+        display:none;
+    }
+
+    #search-select{
+        flex-direction: column;
+    }
+    .search-text{
+        color:white;
+        margin-top:0;
+    }
+
+    .search-form .search-btn{
+        width:100%;
+    }
+
+#search-select .field-outer{
+    width:100%;
+}
+
+    .select-car{
+    width:inherit!important;
+    color:black;
+    background:white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(166, 166, 166);
+    border-image: initial;
+    }
+
+.sold-edit button{
+    width:50%!important;
+    font-size:12px;
+}
+ }
+
+
+
+@media screen and (max-width: 600px){
+    .order-form,.detail{
+        width:80%!important;
+        margin:auto;
+    }
+
+  
+    .f-car{
+        flex-direction: column;
+    }
+
+    .f-car button{
+        width:50%;
+    }
+
+    .car-item{
+        width:100%;
+        margin-bottom:5%;
+    }
+
+    .v-type{
+        flex-direction:column;
+    }
+
+    .type-item{
+        width:100%;
+    }
+    #welcome{
+        font-size:2em;
+    }
+    .auto-form{
+        width:100%;
+        margin-top:5%;
+        margin-left:0px;
+    } 
+    .p-mart .auto-p{
+        display:none;
+    }
+
+    .p-mart,.search-form{
+        width:100%;
+    }
+    .content-wrapper{
+        flex-direction: column;
+    }
+
+    #search-select{
+        flex-direction: column;
+    }
+    .search-text{
+        color:white;
+    }
+
+#search-select .field-outer{
+    width:100%;
+}
+
+    .select-car{
+    width:inherit!important;
+    color:black;
+    background:white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(166, 166, 166);
+    border-image: initial;
+    }
+
+
+    
+ }

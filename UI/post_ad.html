@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Auto Mart | Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Auto Mart, automobile for dealers, automobile for manufacturers, selling cars" />
+
+<!-- //Mete tag keywords -->
+<!-- Stylesheet -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link href="css/nav.css" rel='stylesheet' type='text/css' />
+<link href="css/post_ad.css" rel='stylesheet' type='text/css' />
+<link href="css/signup.css" rel='stylesheet' type='text/css' />
+<!-- //Stylesheet -->
+<!--fonts--> 
+<link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+<div class="auto-nav">
+<h1>Auto<i class="fa fa-car" aria-hidden="true"></i>Mart</h1>
+<div onclick='hamBurger()' class="ham-wrapper">
+<div class="hamburger"></div>
+<div class="hamburger"></div>
+<div class="hamburger"></div>
+</div>
+</div>
+<div class="nav-links">
+
+<ul class="link-list">
+<li><a href="signin.html">Home</a></li>
+
+<li><a href="dash.html">Dashboard</a></li>
+<li><a href="admin_dash.html">Admin</a></li>
+<li><a href="signin.html">Logout</a></li>
+</ul>
+</div>
+
+</div>
+
+
+<div id="register-page">
+<section class="register-section">
+
+<div class="content-wrapper">
+<form  class="post-form">
+<div>
+<h1> Post Car For Sale</h1>
+
+</div>
+        <div class="field-outer">
+          
+            <input type="text" name="state" placeholder="state">
+        </div>
+
+
+        <div class="field-outer">
+        <select class="select-car">
+           <option>State</option>
+           <option value="1">new</option>
+           <option value="2">used</option>
+           </select>
+        </div>
+
+
+        <div class="field-outer">
+         
+            <input type="text" name="price" placeholder="price">
+        </div>
+
+
+        <div class="field-outer">
+            
+            <input type="text" name="manufacturer" placeholder="manufacturer">
+        </div>
+
+
+
+        <div class="field-outer">
+           
+            <input type="text" name="model" placeholder="model">
+        </div>
+
+        <div class="field-outer">
+             <select class="select-car">
+           <option>body type</option>
+           <option value="1">truck</option>
+           <option value="2">van</option>
+           <option value="2">car</option>
+           <option value="2">bus</option>
+           <option value="2">trailer</option>
+           </select>
+        </div>
+
+            <div class="field-outer">
+           
+            <input type="file" name="img" multiple>
+        </div>
+
+        <div class="field-outer">
+        <button type="submit" class="search-btn">Post Ad</button>
+        </div>	
+    </form>
+</div>
+</section>
+
+</div>
+<script src="js/nav.js"></script>
+</body>
+</html>
